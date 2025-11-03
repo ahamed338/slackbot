@@ -1,0 +1,42 @@
+{
+    "password": {
+      "question": "how to reset password",
+      "answer": "You can reset your password at https://company.com/reset-password. If you need help, contact IT support at helpdesk@company.com.",
+      "keywords": ["password", "reset", "login", "forgot password"]
+    },
+    "vacation": {
+      "question": "vacation policy",
+      "answer": "Employees accrue 15 vacation days per year. You can request time off through the HR portal at https://hr.company.com.",
+      "keywords": ["vacation", "time off", "holiday", "pto", "leave"]
+    },
+    "it_support": {
+      "question": "it support",
+      "answer": "For IT issues, please email helpdesk@company.com or call extension 5555. Emergency support is available 24/7.",
+      "keywords": ["it", "support", "helpdesk", "technical", "computer"]
+    },
+    "expense": {
+      "question": "expense report",
+      "answer": "Submit expense reports through the finance portal at https://finance.company.com. Receipts are required for expenses over $25.",
+      "keywords": ["expense", "report", "receipt", "reimbursement"]
+    },
+    "wifi": {
+      "question": "wifi",
+      "answer": "The office WiFi network is 'Company-Guest'. Password: 'Welcome123'. For secure access, use 'Company-Secure' with your domain credentials.",
+      "keywords": ["wifi", "internet", "network", "wireless"]
+    },
+    "meeting_rooms": {
+      "question": "meeting rooms",
+      "answer": "You can book meeting rooms through the Outlook calendar system. Large conference rooms require manager approval.",
+      "keywords": ["meeting", "conference", "room", "book", "reserve"]
+    },
+    "hr": {
+      "question": "hr contact",
+      "answer": "Reach HR at hr@company.com or visit their office on the 3rd floor. Office hours: 9 AM - 5 PM, Monday to Friday.",
+      "keywords": ["hr", "human resources", "payroll", "benefits"]
+    },
+    "software": {
+      "question": "software request",
+      "answer": "For new software installations, submit a ticket to the IT helpdesk. Please include business justification and required specifications.",
+      "keywords": ["software", "install", "application", "program"]
+    }
+  }
