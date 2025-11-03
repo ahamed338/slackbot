@@ -16,22 +16,19 @@ def load_knowledge_base(file_path: str) -> Dict:
         return {}
 
 def setup_logging(level: str = "INFO") -> None:
-    """Setup logging configuration"""
+    """Setup logging configuration - SIMPLE FIX"""
     logging.basicConfig(
         level=getattr(logging, level.upper()),
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.StreamHandler()  # Only console logging on Render
-        ]
+        handlers=[logging.StreamHandler()]  # ONLY CONSOLE LOGGING
     )
 
 def clean_text(text: str) -> str:
     """Clean and normalize text for processing"""
-    # Remove mentions and URLs
     text = re.sub(r'<@[^>]+>', '', text)  # Remove user mentions
     text = re.sub(r'<#[^>]+>', '', text)  # Remove channel mentions
     text = re.sub(r'http\S+', '', text)   # Remove URLs
-    text = re.sub(r'[^\w\s?]', '', text)  # Remove special chars except spaces and ?
+    text = re.sub(r'[^\w\s?]', '', text)  # Remove special chars
     return text.lower().strip()
 
 def calculate_similarity(text1: str, text2: str) -> float:
