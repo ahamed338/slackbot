@@ -21,8 +21,7 @@ def setup_logging(level: str = "INFO") -> None:
         level=getattr(logging, level.upper()),
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         handlers=[
-            logging.FileHandler('logs/bot.log'),
-            logging.StreamHandler()
+            logging.StreamHandler()  # Only console logging on Render
         ]
     )
 
